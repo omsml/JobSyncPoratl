@@ -66,25 +66,7 @@ It demonstrates how a modern recruitment platform works using clean architecture
 
 ## 📊 Visual Architecture
 
-### 🧭 User Journey Flow
 
-```mermaid
-graph TD;
-    A([User Lands on Site]) --> B{Navigation Menu};
-    B -->|Explore| C[Job Search Portal];
-    B -->|Saved| D[Saved Jobs];
-    B -->|Applied| E[Application History];
-
-    C --> F[Filter Engine];
-    F --> G[Job Listings];
-    G --> H[Job Details Modal];
-
-    H --> I(Save Job);
-    H --> J(Apply Job);
-
-    I -.-> D;
-    J -.-> E;
-```
 
 ### 📈 Job Distribution
 
