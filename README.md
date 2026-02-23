@@ -58,10 +58,6 @@ It demonstrates how a modern recruitment platform works using clean architecture
 * Footer integrated form
 * Backend-free email handling via FormSubmit
 
-💬 **Testimonial Carousel**
-
-* Touch-friendly slider powered by Swiper.js
-
 ---
 
 ## 📊 Visual Architecture
@@ -78,17 +74,6 @@ pie title Verified Roles by Category
     "Finance" : 15
 ```
 
-### 🚀 Platform Growth Projection (2026)
-
-```mermaid
-xychart-beta
-    title "Monthly Active Users"
-    x-axis [Jan, Feb, Mar, Apr, May, Jun]
-    y-axis "Active Users (K)" 0 --> 60
-    bar [15,22,35,42,50,58]
-    line [15,22,35,42,50,58]
-```
-
 ---
 
 ## 💻 Tech Stack
@@ -97,9 +82,8 @@ xychart-beta
 | ------------------ | --------------------------- |
 | HTML5              | Semantic Structure          |
 | Tailwind CSS       | Styling & Responsive Layout |
-| Vanilla JavaScript | Logic & State Management    |
+| JavaScript         | Logic & State Management    |
 | Remix Icons        | Modern Vector Icons         |
-| Swiper.js          | Sliders & Carousel          |
 | FormSubmit         | Backend-free Email Handling |
 
 ---
@@ -116,30 +100,6 @@ xychart-beta
 
 ---
 
-## 🛠️ Quick Setup
-
-### 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/yourusername/JobSync.in.git
-```
-
-### 2️⃣ Run Project
-
-Open **index.html** in any modern browser.
-
-✅ No installation required.
-
----
-
-## 🎯 Project Goals
-
-* Showcase advanced frontend engineering
-* Build production-style UI architecture
-* Practice modern UX design concepts
-* Simulate real job portal workflows
-
----
 
 ## 🌟 Future Enhancements
 
@@ -157,9 +117,9 @@ Open **index.html** in any modern browser.
 
 ### **Omm Prakash Samal**
 
-🔗 https://github.com/yourusername
+🔗 https://github.com/omsml
 
-Built with ❤️ in India 🇮🇳
+Built with ❤️ in 🇮🇳 
 
 </div>
 
@@ -175,6 +135,6 @@ Licensed under the **MIT License**.
 
 ⭐ **If you like this project, give it a star!**
 
-© 2026 JobSync India — All Rights Reserved
+© 2026 JobSync India — All Rights Reserved by omsml
 
 </div>
