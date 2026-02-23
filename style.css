@@ -1,0 +1,144 @@
+/* =========================================
+   Base Styles (Mobile First)
+   ========================================= */
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+/* Glass Navigation - optimized for mobile */
+.glass-nav { 
+    background: rgba(255, 255, 255, 0.95); 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.active-nav { 
+    color: #2563eb; 
+    background-color: #eff6ff; 
+    border-radius: 0.75rem; 
+}
+
+/* Animations */
+@keyframes fadeInUp { 
+    from { opacity: 0; transform: translateY(15px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+.job-card { 
+    animation: fadeInUp 0.4s ease-out forwards; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(15px, -25px) scale(1.05); }
+    66% { transform: translate(-10px, 10px) scale(0.95); }
+}
+
+.floating-blob {
+    animation: float 8s ease-in-out infinite;
+}
+
+.swiper-pagination-bullet-active {
+    background: #2563eb !important;
+}
+
+/* Scrollbar - hidden on mobile for better touch experience */
+::-webkit-scrollbar { width: 0px; background: transparent; }
+
+/* =========================================
+   Tablet Devices (768px and up)
+   ========================================= */
+@media (min-width: 768px) {
+    .glass-nav { 
+        background: rgba(255, 255, 255, 0.9); 
+        backdrop-filter: blur(12px); 
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        33% { transform: translate(20px, -35px) scale(1.08); }
+        66% { transform: translate(-15px, 15px) scale(0.92); }
+    }
+
+    /* Show scrollbar on tablets */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+}
+
+/* =========================================
+   Desktop Devices (1024px and up)
+   ========================================= */
+@media (min-width: 1024px) {
+    @keyframes fadeInUp { 
+        from { opacity: 0; transform: translateY(20px); } 
+        to { opacity: 1; transform: translateY(0); } 
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+    }
+
+    .job-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Thicker scrollbar for desktop mice */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+}
+
+/* =========================================
+   Accessibility: Reduced Motion
+   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+    .job-card, .floating-blob {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* =========================================
+   Form Custom Styles & Overrides
+   ========================================= */
+
+/* Fix for Chrome autocomplete yellow background in dark mode */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1e293b inset !important; /* matches slate-800 roughly */
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Subtle focus animation for form inputs */
+.form-group input, 
+.form-group textarea {
+    transform: translateY(0);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15); /* blue-600 shadow */
+}
+
+/* Animation for the success message appearing */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
