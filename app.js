@@ -213,7 +213,7 @@ function openModal(jobId) {
             </div>
         </div>
         <div class="p-10 bg-white border-t flex gap-4">
-            <button onclick="handleAction('applied', '${job.id}')" class="flex-[2] py-4 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-700 shadow-2xl transition-all">Sync Application</button>
+            <button onclick="handleAction('applied', '${job.id}')" class="flex-[2] py-4 bg-blue-600 text-white font-black rounded-2xl hover:bg-blue-700 shadow-2xl transition-all">Quick Apply</button>
             ${saveBtnHtml}
         </div>`;
     modalOverlay.classList.remove('hidden');
@@ -265,4 +265,5 @@ mobileMenuBtn.addEventListener('click', () => {
 function closeMobileMenu() {
     mobileMenu.classList.add('hidden');
     menuIcon.classList.replace('ri-close-large-line', 'ri-menu-4-line');
+
 }
