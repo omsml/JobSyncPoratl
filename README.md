@@ -12,7 +12,7 @@ Explore **3600+ Verified Opportunities** in one modern platform.
 ![Responsive](https://img.shields.io/badge/Design-Responsive-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-🌐 *A modern high-end job portal UI simulation built using pure frontend technologies.*
+🌐 *A modern high-end job portal UI simulation built using AI technologies.*
 
 </div>
 
