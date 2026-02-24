@@ -7,11 +7,6 @@
 ✨ **Search • Apply • Empower Your Career Journey**
 Explore **3600+ Verified Opportunities** in one modern platform.
 
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![Frontend](https://img.shields.io/badge/Frontend-HTML%20%7C%20Tailwind%20%7C%20JavaScript-blue?style=for-the-badge)
-![Responsive](https://img.shields.io/badge/Design-Responsive-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
 🌐 *A modern high-end job portal UI simulation , Live Link : https://jobsyncin.netlify.app/ .*
 
 </div>
